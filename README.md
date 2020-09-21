@@ -62,3 +62,5 @@ or...
 ```sh
 $ concurrently "npm run server" "npm run client"
 ```
+
+#### Open http://localhost:3000 in the browser
