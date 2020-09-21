@@ -8,6 +8,9 @@ class CurrencyExchangeChart extends Component {
     };
   }
 
+  /**
+   * To update rates by fetching from API based on selected currency
+   */
   updateRates = () => {
     fetch(
       `https://api.exchangeratesapi.io/latest?base=${this.props.selectedCurrency}`

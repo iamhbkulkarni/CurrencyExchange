@@ -17,9 +17,10 @@ class App extends Component {
     this.setState({ selectedCurrency });
   };
 
-  currencyOptions = [];
-
   componentDidMount = () => {
+    /**
+     * Fetch currency options from backend to display in dropdown
+     */
     fetch('/currencies')
       .then((response) => response.json())
       .then((currencyOptions) => {
